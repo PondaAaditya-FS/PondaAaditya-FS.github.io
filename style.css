@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1 {
+    font-size: x-large;
+    font-variant: small-caps;
+    text-align: justify;
+    color: blue;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+    font-size: larger;
+    text-decoration: underline;
+    text-align: center;
+}
+h3 {
+    font-size: medium;
+}
+
+p {
+    font-size: small;
+}
+
+li {
+    font-style: italic;
+}
+
