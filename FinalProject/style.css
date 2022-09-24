@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 600px;
+    background-color: #ffe;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    margin: 10px;
+}
+
+input[type="text"] {
+    width: 100px;
+    text-align: left;
+    margin: 10px;
+}
+
+fieldset {
+    box-sizing: border-box;
+    border-color: black;
+    background-color: #eff;
+    text-align: center;
+}
+
+.success {
+    color: green
+}
+
+.error {
+    color: red
+}

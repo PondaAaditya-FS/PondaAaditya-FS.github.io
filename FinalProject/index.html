@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Create Radio button for Shape Selection -->
+    <h1>Area Calculation</h1>
+    <fieldset>
+      <legend>Select a Shape</legend>
+      <input type="radio" id="square" name="shape" value="square" checked onclick="shapeChange()"/>
+      <label for="square">Square</label>
+      <input type="radio" id="rectangle" name="shape" value="rectangle" onclick="shapeChange()"/>
+      <label for="rectangle">Rectangle</label>
+      <input type="radio" id="circle" name="shape" value="circle" onclick="shapeChange()"/>
+      <label for="circle">Circle</label>
+      <input type="radio" id="triangle" name="shape" value="triangle" onclick="shapeChange()"/>
+      <label for="triangle">Triangle</label>
+      <br>
+      <canvas id="myCanvas" width="100" height="100" >
+    </fieldset>
+    <br />
+
+    <!-- Felds for Square Input -->
+    <fieldset id="squareInput">
+        <legend>Square Input</legend>
+        <label for="side">Side : </label>
+        <input type="text" name="side" id="side"></input>
+    </fieldset>
+
+    <!-- Felds for Rectangle Input -->
+    <fieldset id="rectangleInput" hidden>
+        <legend>Rectangle Input</legend>
+        <label for="length">Length : </label>
+        <input type="text" name="length" id="length"></input>
+        <br>
+        <label for="width">Width : </label>
+        <input type="text" name="width" id="width"></input>
+    </fieldset>
+
+    <!-- Felds for Circle Input -->
+    <fieldset id="circleInput" hidden>
+        <legend>Circle Input</legend>
+        <label for="radius">Radius : </label>
+        <input type="text" name="radius" id="radius"></input>
+    </fieldset>
+
+    <!-- Felds for Triangle Input -->
+    <fieldset id="triangleInput" hidden>
+        <legend>Triangle Input</legend>
+        <label for="base">Base : </label>
+        <input type="text" name="base" id="base"></input>
+        <br>
+        <label for="height">Height : </label>
+        <input type="text" name="height" id="height"></input>
+    </fieldset>
+    <br>
+
+    <!-- Submit button to calculate Area -->
+    <div>
+        <button type="submit" onclick="calculateArea()">Calculate Area</button>
+    </div>
+    <br>
+
+    <!-- Field for showing area -->
+    <fieldset>
+        <legend>Area</legend>
+        <label id="area" class="success"></label>
+    </fieldset>
+    <script src="main.js"></script>
+  </body>
+</html>
